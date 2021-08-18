@@ -138,8 +138,8 @@
     </header>
 
     <!-- ABOUT section -->
-    <section class="h-96 max-w-7xl mx-auto">
-      <div class="flex justify-center items-center">
+    <section class="h-96 mx-auto" style="width: 80%">
+      <div class="flex justify-between items-center">
         <div class="text-center my-20">
           <h2 class="text-5xl font-bold text-gray-600">About</h2>
           <p class="pt-16 px-36 block text-gray-500">
@@ -222,10 +222,8 @@
         style="background-image: url(./images/3433814.jpg)"
       >
         <div class="text-center">
-          <h2 class="text-5xl font-bold text-gray-600">Projects</h2>
-          <p class="pt-4 block text-gray-500">
-            You'll love our work. Check it out!
-          </p>
+          <h2 class="text-5xl font-bold text-gray-600 pb-3">Projects</h2>
+          <p class="block text-gray-500">You'll love our work. Check it out!</p>
         </div>
       </div>
 
@@ -307,17 +305,20 @@
     </section>
 
     <!-- SERVICES section  -->
-    <section class="flex justify-center items-center max-w-max mx-auto pb-40">
+    <section
+      class="flex justify-center items-center mx-auto pb-40"
+      style="width: 80%"
+    >
       <div class="h-96 mx-auto text-center">
         <div class="pt-20 pb-20">
-          <h2 class="text-5xl font-bold text-gray-600 pb-5">Services</h2>
+          <h2 class="text-5xl font-bold text-gray-600 pb-3">Services</h2>
           <p class="block text-gray-500">
             In order to help you grow your business, our carefully selected
             experts can advice you in the following areas:
           </p>
         </div>
-        <div class="flex justify-around mx-10">
-          <div class="">
+        <div class="flex justify-evenly space-x-16">
+          <div>
             <div class="icon flex justify-center items-center pb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -331,14 +332,14 @@
               </svg>
             </div>
             <h3 class="text-3xl font-bold text-red-300">Web Design</h3>
-            <p class="pt-8 block text-gray-500 px-20">
+            <p class="pt-8 block text-gray-500">
               Consectetur adipiscing elit. Praesent molestie urna hendrerit erat
               tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue
               dapibus porttitor at in mauris. Pellentesque commodo...
             </p>
           </div>
-          <div class="">
-            <div class="icon flex justify-center items-center pb-3">
+          <div>
+            <div class="icon flex justify-around items-center pb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-10 w-10 text-yellow-400"
@@ -355,13 +356,13 @@
               </svg>
             </div>
             <h3 class="text-3xl font-bold text-yellow-400">WEB Development</h3>
-            <p class="pt-8 block text-gray-500 px-20">
+            <p class="pt-8 block text-gray-500">
               Consectetur adipiscing elit. Praesent molestie urna hendrerit erat
               tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue
               dapibus porttitor at in mauris. Pellentesque commodo...
             </p>
           </div>
-          <div class="">
+          <div>
             <div class="icon flex justify-center items-center pb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +380,7 @@
               </svg>
             </div>
             <h3 class="text-3xl font-bold text-purple-800">SEO Analysis</h3>
-            <p class="pt-8 block text-gray-500 px-20">
+            <p class="pt-8 block text-gray-500">
               Consectetur adipiscing elit. Praesent molestie urna hendrerit erat
               tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue
               dapibus porttitor at in mauris. Pellentesque commodo...
@@ -391,40 +392,123 @@
 
     <!-- Latest News section -->
 
-    <section>
-      <div>
+    <section class="bg-gray-600 bg-opacity-50">
+      <div style="width: 80%" class="flex mx-auto">
         <div>
-          <h2>Latest News</h2>
-          <p>
-            If you are interested in the latest articles in the industry, take a
-            sneak peek at our blog. You have nothing to loose!
-          </p>
-          <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div class="text-center">
+            <h2 class="text-5xl font-bold pb-3 text-white pt-20">
+              Latest News
+            </h2>
+            <p class="block text-white opacity-70">
+              If you are interested in the latest articles in the industry, take
+              a sneak peek at our blog. You have nothing to loose!
+            </p>
+            <a href="#">
+              <div
+                class="
+                  flex
+                  justify-center
+                  items-center
+                  space-x-2
+                  my-16
+                  mx-auto
+                  bg-yellow-400
+                  rounded
+                  text-white
+                  font-bold
+                "
+                style="width: 12%"
+              >
+                <div class="logo py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div><span>See blog</span></div>
+              </div></a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <span>See blog</span>
-          </button>
-        </div>
-        <div class="blogs flex">
-          <div>
-            <div class="image"></div>
-            <div class="heading">
-              <h3>We have Made Illdy Theme SEO Friendly</h3>
+          </div>
+
+          <!-- blogs posts -->
+          <div class="blogs flex justify-evenly space-x-10">
+            <div>
+              <div
+                class="image h-56 w-full bg-no-repeat bg-cover"
+                style="background-image: url(./images/blog1.jpg)"
+              ></div>
+              <a href="#"> <h3>We have Made Illdy Theme SEO Friendly</h3></a>
               <p>
                 Illdy One Page WordPress theme is fully SEO friendly and is
                 ready to help you to achieve the highest rankings...
+              </p>
+              <div class="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>Read more</span>
+              </div>
+            </div>
+            <div>
+              <div
+                class="image h-56 w-full bg-no-repeat bg-cover"
+                style="background-image: url(./images/blog2.jpg)"
+              ></div>
+              <a href="#">
+                <h3>Stunning One Page WordPress Theme For Masses</h3></a
+              >
+              <p>
+                This theme is not just free, it is free for private and
+                commercial use since it is licensed under GPL…
+              </p>
+              <div class="button h-56 w-full bg-no-repeat bg-cover">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>Read more</span>
+              </div>
+            </div>
+            <div>
+              <div
+                class="image h-56 w-full bg-no-repeat bg-cover"
+                style="background-image: url(./images/blog3.jpg)"
+              ></div>
+              <a href="#"> <h3>Hello World!</h3></a>
+              <p>
+                Welcome to colorlib.com. This is our first post around Illdy
+                WordPress theme. Now show that you can make out of it.…
               </p>
               <div class="button">
                 <svg
