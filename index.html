@@ -392,7 +392,7 @@
 
     <!-- Latest News section -->
 
-    <section class="bg-gray-600 bg-opacity-50 pb-24">
+    <section class="pb-24" style="background-color: #262a3b">
       <div style="width: 80%" class="flex mx-auto">
         <div>
           <div class="text-center">
@@ -441,7 +441,7 @@
           </div>
 
           <!-- blogs posts -->
-          <div class="blogs flex justify-evenly space-x-10">
+          <div class="blogs grid grid-cols-3 gap-x-10">
             <!-- start of blog 1  -->
             <div class="bg-white">
               <div
@@ -631,10 +631,10 @@
 
     <!-- Team Section  -->
     <section
-      class="flex justify-center items-center mx-auto pb-40"
+      class="flex justify-center items-center mx-auto py-32"
       style="
         background-image: url(https://demo.colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
-        height: 550px;
+        height: 600px;
       "
     >
       <div class="mx-auto">
@@ -645,7 +645,7 @@
             level.
           </p>
         </div>
-        <div class="teams-container flex justify-center">
+        <div class="grid grid-cols-3">
           <!-- Team 1 -->
           <div class="team flex p-10 space-x-8">
             <div
@@ -690,7 +690,7 @@
           <div class="team flex p-10 space-x-8">
             <div
               class="profile-pic h-32 w-32 rounded-full bg-cover bg-no-repeat"
-              style="background-image: url(./images/profile-pic-2.jpeg)"
+              style="background-image: url(./images/profile-pic-2.jpg)"
             ></div>
             <div class="description">
               <h3 class="text-2xl font-bold text-gray-600 pt-3 pb-2">
@@ -698,7 +698,8 @@
               </h3>
               <h4 class="text-yellow-400 pb-4">SEO Specialist</h4>
               <p class="block text-gray-500">
-                Curious, tech-geeck and gets serious when it comes to work.
+                Curious, tech-geeck and gets serious when it <br />comes to
+                work.
               </p>
               <div class="icons flex space-x-3 mt-5 items-center">
                 <div class="facebook-icon">
@@ -732,7 +733,7 @@
           <div class="team flex p-10 space-x-8">
             <div
               class="profile-pic h-32 w-32 rounded-full bg-cover bg-no-repeat"
-              style="background-image: url(./images/profile-pic-3.jpeg)"
+              style="background-image: url(./images/profile-pic-3.jpg)"
             ></div>
             <div class="description">
               <h3 class="text-2xl font-bold text-gray-600 pt-3 pb-2">
@@ -768,6 +769,62 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team Section  -->
+
+    <!-- Contact Section  -->
+
+    <section style="height: 700px">
+      <div class="flex justify-center items-center pt-16">
+        <h2 class="text-5xl font-bold text-gray-600 pb-3">Contact Us</h2>
+      </div>
+      <!-- form block  -->
+      <div
+        style="width: 80%"
+        class="mx-auto grid grid-cols-3 gap-x-10 my-20 gap-y-8 text-gray-500"
+      >
+        <div class="grid grid-cols-2">
+          <div class="text-yellow-400">Address:</div>
+          <div>Street 221B Baker Street, London, UK</div>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="text-yellow-400">Customer Support:</div>
+          <div>E-mail: contact@site.com Phone:(555)5555-5555</div>
+        </div>
+        <div>T F IN</div>
+        <div>
+          <h3>Your Name(required)</h3>
+          <input
+            type="text"
+            name="name"
+            class="w-full h-12 border bg-gray-50"
+          />
+        </div>
+        <div>
+          <h3>Your Email(required)</h3>
+          <input
+            type="text"
+            name="email"
+            class="w-full h-12 border bg-gray-50"
+          />
+        </div>
+        <div>
+          <h3>Subject</h3>
+          <input
+            type="text"
+            name="subject"
+            class="w-full h-12 border bg-gray-50"
+          />
+        </div>
+        <div class="col-span-3">
+          <h3>Your Message</h3>
+          <input
+            type="text"
+            name="message"
+            class="w-full h-56 border bg-gray-50"
+          />
         </div>
       </div>
     </section>
