@@ -1,3 +1,8 @@
+const services = [{
+    name: 'Typography', logo_class: 'fas fa-font text-red-400 mr-2', color: 'text-red-400'
+}, {
+    name: 'Design', logo_class: 'fas fa-pencil-alt text-yellow-400 mr-2', color: 'text-yellow-400'
+}, { name: 'Development', logo_class: 'fas fa-code text-purple-800 mr-2', color: 'text-purple-800' }];
 const About = () => {
     return (
         <section className="h-96 mx-auto" style={{ width: "80%" }}>
@@ -15,64 +20,17 @@ const About = () => {
                 </div>
             </div>
             <div className="flex justify-around text-xl">
-                <div className="flex items-center">
-                    <div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 text-red-400 mr-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                            />
-                        </svg>
+                {services.map((list) => (
+                    <div className="flex items-center">
+                        <div>
+                            <i className={list.logo_class}></i>
+                        </div>
+                        <div>
+                            <span className={list.color}>{list.name}</span>
+                        </div>
                     </div>
-                    <div>
-                        <span className="text-red-400">Typography</span>
-                    </div>
-                </div>
-                <div className="flex items-center">
-                    <div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 mr-2 text-yellow-400"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
-                            />
-                        </svg>
-                    </div>
-                    <div>
-                        <span className="text-yellow-400">Design</span>
-                    </div>
-                </div>
-                <div className="flex items-center">
-                    <div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 mr-2 text-purple-800"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                            />
-                        </svg>
-                    </div>
-                    <span className="text-purple-800">Development</span>
-                    <div></div>
-                </div>
+                ))
+                }
             </div>
         </section>
     )

@@ -1,5 +1,6 @@
-const Nav = () => {
+const navlinks = ['about', 'portfolio', 'Testimonials', 'services', 'blog', 'our team', 'contact us'];
 
+const Nav = () => {
     let url = "#";
     return (
 
@@ -25,31 +26,16 @@ const Nav = () => {
                             </div>
                         </div>
                         <div
-                            className="flex items-center space-x-1 text-white font-bold text-lg"
+                            className="flex items-center space-x-1 text-white text-xl font-semibold"
                         >
-                            <a href={url} className="px-3 hover:text-yellow-400">About</a>
-                            <a href={url} className="px-3 hover:text-yellow-400">Portfolio</a>
-                            <a href={url} className="px-3 hover:text-yellow-400">Testimonials</a>
-                            <a
-                                href={url}
-                                className="px-3 hover:text-yellow-400 transition duration-3000"
-                            >Services</a
-                            >
-                            <a
-                                href={url}
-                                className="px-3 hover:text-yellow-400 transition duration-3000"
-                            >Our Team</a
-                            >
-                            <a
-                                href={url}
-                                className="px-3 hover:text-yellow-400 transition duration-3000"
-                            >Blog</a
-                            >
-                            <a
-                                href={url}
-                                className="px-3 hover:text-yellow-400 transition duration-3000"
-                            >Contact Us</a
-                            >
+                            {
+                                navlinks.map((list) => {
+                                    return (
+                                        <a href={url} className="px-3 hover:text-yellow-400 transition duration-3000 capitalize">{list}</a>
+
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
