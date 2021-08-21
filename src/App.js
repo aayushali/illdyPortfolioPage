@@ -7,20 +7,40 @@ import Services from "./Components/Services";
 import Team from "./Components/Team";
 import Footer from "./Components/Footer";
 import Testimonials from "./Components/Testimonials";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <FrontPage />
-      <About />
-      <Projects />
-      <Testimonials />
-      <Services />
-      <LatestNews />
-      <Team />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/portfolio">
+            <Projects />
+          </Route>
+          <Route path="/testimonials">
+            <Testimonials />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/blog">
+            <LatestNews />
+          </Route>
+          <Route path="/team">
+            <Team />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <FrontPage />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
