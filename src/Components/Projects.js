@@ -7,7 +7,7 @@ const images = [
 const Projects = () => {
   return (
     <div>
-      <section className="mt-24">
+      <section className="mt-28">
         <div
           className="h-48 flex justify-center items-center"
           style={{ backgroundImage: "url(./images/3433814.jpg)" }}

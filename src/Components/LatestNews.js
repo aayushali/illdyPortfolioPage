@@ -22,7 +22,7 @@ const LatestNews = () => {
   let url = "#";
 
   return (
-    <section className="pb-24" style={{ backgroundColor: "#262a3b" }}>
+    <section className="pb-24 mt-28" style={{ backgroundColor: "#262a3b" }}>
       <div style={{ width: "80%" }} className="flex mx-auto">
         <div>
           <div className="text-center">

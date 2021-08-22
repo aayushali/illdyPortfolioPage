@@ -4,7 +4,7 @@ const Contact = () => {
   let url = "#";
   return (
     <div>
-      <section section id="contact">
+      <section id="contact" className="mt-28">
         <div className="flex justify-center items-center pt-16">
           <h2 className="text-5xl font-bold text-gray-600 pb-3">Contact Us</h2>
         </div>
@@ -23,15 +23,24 @@ const Contact = () => {
           <div>T F IN</div>
           <div>
             <h3>Your Name(required)</h3>
-            <TextInput name="name" />
+            <TextInput
+              name="name"
+              classes="w-full h-12 border bg-gray-50 rounded-md"
+            />
           </div>
           <div>
             <h3>Your Email(required)</h3>
-            <TextInput name="email" />
+            <TextInput
+              name="email"
+              classes="w-full h-12 border bg-gray-50 rounded-md"
+            />
           </div>
           <div>
             <h3>Subject</h3>
-            <TextInput name="subject" />
+            <TextInput
+              name="subject"
+              classes="w-full h-12 border bg-gray-50 rounded-md"
+            />
           </div>
           <div className="col-span-3">
             <h3>Your Message</h3>

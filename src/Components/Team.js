@@ -23,7 +23,7 @@ const Team = () => {
   return (
     <div>
       <div
-        className="bg-no-repeat h-36 bg-cover bg-center relative"
+        className="bg-no-repeat h-36 bg-cover bg-center relative mt-28"
         style={{ backgroundImage: "url(./images/front-page-counter.jpg)" }}
       >
         <div

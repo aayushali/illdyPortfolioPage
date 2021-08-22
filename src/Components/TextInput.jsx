@@ -4,8 +4,12 @@ const TextInput = (props) => {
   const {name} = props
 
   return (
-    <input type="text" name={name} className="w-full h-12 border bg-gray-50 rounded-md" />
+    <input type="text" name={name} className={props.classes} placeholder={props.placeholder}/>
   );
 };
+
+TextInput.defaultProps = {
+  placeholder: ""
+}
 
 export default TextInput;

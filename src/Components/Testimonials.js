@@ -6,7 +6,7 @@ const Testimonials = () => {
           "url(./images/pexels-eberhard-grossgasteiger-1367192.jpg)",
         height: "650px",
       }}
-      className="bg-no-repeat bg-cover bg-fixed h-screen"
+      className="bg-no-repeat bg-cover bg-fixed h-screen mt-28"
     >
       <div
         className=" h-full  w-full bg-purple-900 bg-opacity-40 flex justify-center items-center text-white

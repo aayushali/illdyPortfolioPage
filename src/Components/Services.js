@@ -26,7 +26,7 @@ const Services = () => {
   return (
     <section
       section
-      className="flex justify-center items-center mx-auto pb-40"
+      className="flex justify-center items-center mx-auto pb-40 mt-28"
       style={{ width: "80%" }}
     >
       <div className="h-96 mx-auto text-center">

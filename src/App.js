@@ -5,13 +5,15 @@ import LatestNews from "./Components/LatestNews";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services";
 import Team from "./Components/Team";
+import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 import Testimonials from "./Components/Testimonials";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
       <div className="App">
+        <Nav />
         <Switch>
           <Route path="/about">
             <About />
@@ -38,6 +40,7 @@ function App() {
             <FrontPage />
           </Route>
         </Switch>
+
         <Footer />
       </div>
     </Router>

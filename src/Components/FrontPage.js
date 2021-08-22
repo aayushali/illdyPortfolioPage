@@ -1,13 +1,12 @@
-import Nav from "./Nav";
+import UsingAPI from "./UsingAPI";
+
 const FrontPage = () => {
   return (
     <div>
       <header
         style={{ backgroundImage: `url(./images/front-page-header.jpg)` }}
-        className="bg-fixed bg-no-repeat bg-cover h-screen"
+        className="bg-fixed bg-no-repeat bg-cover h-screen w-screen"
       >
-        <Nav />
-
         <div className="flex h-screen justify-center items-center">
           <div
             className="  max-w-9xl  m-auto  font-sans  antialiased text-white  tracking-wide
@@ -39,6 +38,7 @@ const FrontPage = () => {
           </div>
         </div>
       </header>
+      <UsingAPI />
     </div>
   );
 };

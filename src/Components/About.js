@@ -17,7 +17,7 @@ const services = [
 ];
 const About = () => {
   return (
-    <section className="h-96 mx-auto" style={{ width: "80%" }}>
+    <section className="h-96 mx-auto mt-28" style={{ width: "80%" }}>
       <div className="flex justify-between items-center">
         <div className="text-center my-20">
           <h2 className="text-5xl font-bold text-gray-600">About</h2>
