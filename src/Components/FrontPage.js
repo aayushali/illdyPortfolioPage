@@ -1,5 +1,3 @@
-import UsingAPI from "./UsingAPI";
-
 const FrontPage = () => {
   return (
     <div>
@@ -38,7 +36,6 @@ const FrontPage = () => {
           </div>
         </div>
       </header>
-      <UsingAPI />
     </div>
   );
 };
