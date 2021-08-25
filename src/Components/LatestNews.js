@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Blog from "./Blog";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./LatestNews.css";
 const LatestNews = () => {
   let url = "#";
   const [posts, setPosts] = useState([]);
@@ -36,15 +36,17 @@ const LatestNews = () => {
   const handleClick = () => {
     setTitleFromButtonClick(title);
   };
+  console.log("value", posts);
 
   let content = <div></div>;
+  console.log("posts", posts);
   if (loading) {
     content = (
       <div className="text-yellow-400 text-2xl mx-auto text-center w-full">
-        "Loading.."
+        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
       </div>
     );
-  } else if (posts.length === 0) {
+  } else if (!posts) {
     content = (
       <div className="text-yellow-400 text-2xl">"No results to Display"</div>
     );
@@ -82,9 +84,7 @@ const LatestNews = () => {
                   </svg>
                 </div>
                 <div>
-                  <Link to={`/blog/${post.rank}/${post.title}`}>
-                    <span>Read More</span>
-                  </Link>
+                  <span>Read More</span>
                 </div>
               </div>
             </a>
@@ -140,9 +140,6 @@ const LatestNews = () => {
               </div>
             </div>
           </div>
-          <Route path="/blog/:rank/:title">
-            <Blog />
-          </Route>
         </section>
       </Router>
     </div>
