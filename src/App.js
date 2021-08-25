@@ -38,6 +38,11 @@ function App() {
           </Route>
           <Route path="/">
             <FrontPage />
+            <About />
+            <Projects />
+            <Testimonials />
+            <Services />
+            <Team />
           </Route>
         </Switch>
 
